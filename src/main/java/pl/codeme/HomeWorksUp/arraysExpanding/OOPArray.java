@@ -17,13 +17,13 @@ public class OOPArray {
 			array = expandedArray;
 		}
 
-		return array;
+		return array; 
 	}
 
 	public int getIdx(int value) {
 
 		return array[value];
-	}
+	} 
  
 }
  
