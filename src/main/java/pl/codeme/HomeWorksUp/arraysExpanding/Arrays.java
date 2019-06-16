@@ -3,33 +3,39 @@ package pl.codeme.HomeWorksUp.arraysExpanding;
 public class Arrays {
 	
 	private int[] array;
-	
+	int n;
 	public Arrays(int n) {
+		this.n=n;
 		this.array = new int[n]; 
+		 
 	}
 	
 	int idx=0; 
 
-	public void extendArr() {
-		int[]tmp=new int[array.length+3];
+	public int[] extendArr() { 
+		int[]tmp=new int[array.length+(n-array.length)];
 		
 		for(int i =0; i < array.length;i++) {
 			tmp[i]=array[i];
 		}
 		array=tmp;
+		return array;
 	}
 	
-	public void add(int value) {
+	public int[] add(int value) {
 		array[idx]=value;
 		idx++;
-		if(idx>=array.length) {
+		if(idx>=array.length) { 
 			extendArr();
 		}
+		
+		return array;
 	}
 	
 	
-	public void get(int idx) {
-		System.out.println(array[idx]);
+	public int get(int idx) {
+		//System.out.println(array[idx]);
+		return array[idx];
 	}
 	
 	public void printTab() {

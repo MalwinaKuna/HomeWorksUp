@@ -6,12 +6,17 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		Arrays array= new Arrays(3); //tyle elementów
+		Arrays array= new Arrays(5); //tyle elementów
 		
 		array.printTab();
 		array.add(875);
+		array.add(666);
+		array.add(000);
+		array.add(999);
+		array.add(777);
 		array.printTab();
-		array.get(0);
+		int valueInIdx=array.get(0);
+		System.out.println(valueInIdx);
 
 		
 		
