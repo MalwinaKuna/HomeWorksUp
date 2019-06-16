@@ -17,6 +17,9 @@ public class Main {
 		array.printTab();
 		int valueInIdx=array.get(0);
 		System.out.println(valueInIdx);
+		
+		
+		
 
 		
 		

@@ -17,7 +17,7 @@ public class Arrays {
 		
 		for(int i =0; i < array.length;i++) {
 			tmp[i]=array[i];
-		}
+		} 
 		array=tmp;
 		return array;
 	}
